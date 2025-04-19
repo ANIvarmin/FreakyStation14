@@ -1,0 +1,87 @@
+# Действие для спавна клинков богомола
+
+#- type: entity
+#  id: SpawnBladeBogomolPinkAction
+#  name: Клинок богомола
+#  description: Выдвигает из вашей руки клинок богомола
+#  components:
+#  - type: InstantAction
+#    useDelay: 1.0
+#    icon:
+#      sprite: Casha/implants/klinkibogomola/bladesbogomolfiol.rsi
+#      state: icon
+#    event: !type:UseSpawnItemOnUseActionEvent
+
+# Имплант, содержащий действие спавна клинков
+#- type: entity
+#  parent: BaseSubdermalImplant
+#  id: ImplantActionBladeBogomolPink
+#  name: Клинки богомола
+#  description: Розовые клинки богомола. Гламурно и круто.
+#  categories: [ HideSpawnMenu ]
+#  components:
+#  - type: SubdermalImplant
+#    implantAction: SpawnBladeBogomolPinkAction
+#  - type: SpawnItemOnUse
+#    spawnedPrototype: BladeBogomolPink
+#    action: SpawnBladeBogomolPinkAction
+#    spawnNewOnSecondUse: false
+#    targetSlot: hand
+#  - type: Tag
+#    tags:
+#    - SubdermalImplant
+#    - HideContextMenu
+
+# Имплантер для установки импланта
+#- type: entity
+#  id: ImplanterActionBladeBogomolPink
+#  suffix: Клинки Богомола
+#  parent: BaseImplantOnlyImplanter
+#  components:
+#  - type: Implanter
+#    implantOnly: true
+#    implant: ImplantActionBladeBogomolPink
+#  - type: HiddenDescription # Corvax MRP Hidden Description
+#    entries:
+#    - label: corvax-hidden-desc-LegalImplants-medical
+#      jobRequired:
+#      - Paramedic
+#      - MedicalDoctor
+#      - ChiefMedicalOfficer
+#    - label: corvax-hidden-desc-SadTromboneImplanter-research
+#      jobRequired:
+#      - ResearchAssistant
+#      - ResearchDirector
+#      - Scientist
+#      - Borg
+#    - label: hidden-desc-implantbogomol-syndicate
+#      whitelistMind:
+#        components:
+#        - TraitorRole
+#        - NukeOperative
+
+# Клинки богомола (предмет)
+#- type: entity
+#  name: Розовые клинки богомола
+#  parent: BaseItem
+#  id: BladeBogomolPink
+#  description: Выглядят круто и гламурно. Остренькие.
+#  components:
+#  - type: Sharp
+#  - type: Execution
+#    doAfterDuration: 4.0
+#  - type: Sprite
+#    sprite: Casha/implants/klinkibogomola/bladesbogomolfiol.rsi
+#    state: icon
+#  - type: MeleeWeapon
+#    wideAnimationRotation: 90
+#    attackRate: 1.25
+#    damage:
+#      types:
+#        Slash: 10
+#  - type: Item
+#    sprite: Casha/implants/klinkibogomola/bladesbogomolfiol.rsi
+#  - type: Prying 
+
+
+  
