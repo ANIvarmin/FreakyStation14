@@ -1,0 +1,50 @@
+- type: body
+  name: "Rodentia"
+  id: Homa
+  root: torso
+  slots:
+    head:
+      part: HeadHoma
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoHoma
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head
+      organs:
+        heart: OrganAnimalHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHomaStomach
+        liver: OrganAnimalLiver
+        kidneys: OrganHumanKidneys
+    right arm:
+      part: RightArmHoma
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmHoma
+      connections:
+      - left hand
+    right hand:
+      part: RightHandHoma
+    left hand:
+      part: LeftHandHoma
+    right leg:
+      part: RightLegHoma
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegHoma
+      connections:
+      - left foot
+    right foot:
+      part: RightFootHoma
+    left foot:
+      part: LeftFootHoma

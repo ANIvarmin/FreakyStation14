@@ -21,6 +21,9 @@
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
     - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
     - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
+    - map: [ "anal" ]
+    - map: [ "pants" ]
+    - map: [ "bra" ]
     - map: ["jumpsuit"]
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
@@ -337,6 +340,9 @@
     - map: [ "head" ]
     - map: [ "pocket1" ]
     - map: [ "pocket2" ]
+    - map: [ "pants" ]
+    - map: [ "bra" ]
+    - map: [ "anal" ]
   - type: Appearance
   - type: HumanoidAppearance
     species: Human

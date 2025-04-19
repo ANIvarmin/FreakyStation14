@@ -1,0 +1,49 @@
+﻿- type: body
+  id: Imper
+  name: "Imper"
+  root: torso
+  slots:
+    head:
+      part: HeadImper
+      connections:
+      - torso
+      organs:
+        brain: OrganImperBrain
+        eyes: OrganImperEyes
+    torso:
+      part: TorsoImper
+      connections:
+      - right_arm
+      - left_arm
+      - right_leg
+      - left_leg
+      organs:
+        heart: OrganImperHeart
+        lungs: OrganImperLungs
+        stomach: OrganImperStomach
+        liver: OrganImperLiver
+        kidneys: OrganImperKidneys
+    right_arm:
+      part: RightArmImper
+      connections:
+      - right_hand
+    left_arm:
+      part: LeftArmImper
+      connections:
+      - left_hand
+    right_hand:
+      part: RightHandImper
+    left_hand:
+      part: LeftHandImper
+    right_leg:
+      part: RightLegImper
+      connections:
+      - right_foot
+    left_leg:
+      part: LeftLegImper
+      connections:
+      - left_foot
+    right_foot:
+      part: RightFootImper
+    left_foot:
+      part: LeftFootImper
