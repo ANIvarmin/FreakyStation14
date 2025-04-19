@@ -1,0 +1,5 @@
+- type: entity
+  save: false
+  name: Urist McRodentia
+  parent: [BaseMobHoma, BaseMob]
+  id: MobHoma

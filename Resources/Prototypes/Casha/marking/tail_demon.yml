@@ -1,0 +1,17 @@
+- type: marking
+  id: DemonTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Imper]
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+          category: Hair
+      fallbackTypes:
+        - !type:CategoryColoring
+          category: FacialHair
+        - !type:SkinColoring
+  sprites:
+  - sprite: Casha/markings/taildemon.rsi
+    state: tail_demon

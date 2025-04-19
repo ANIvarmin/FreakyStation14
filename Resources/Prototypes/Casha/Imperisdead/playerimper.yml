@@ -1,0 +1,116 @@
+- type: entity
+  save: false
+  name: Urist McImper
+  parent: BaseMobImper
+  id: MobImper
+
+#Syndie
+- type: entity
+  parent: MobImper
+  id: MobImperSyndicateAgentBase
+  name: syndicate agent
+  suffix: Imper, Base
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+    hair: HairBald
+  - type: Loadout
+    prototypes: [SyndicateOperativeGearExtremelyBasic]
+    roleLoadout: [ RoleSurvivalSyndicate ]
+  - type: RandomMetadata
+    nameSegments: [NamesDeathCommando]
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+
+- type: entity
+  parent: MobImperSyndicateAgentBase
+  id: MobImperSyndicateAgent
+  name: syndicate agent
+  suffix: Imper, Traitor
+  components:
+  # make the player a traitor once its taken
+  - type: AutoTraitor
+    profile: TraitorReinforcement
+
+- type: entity
+  parent: MobImperSyndicateAgent
+  id: MobImperSyndicateAgentMedic
+  name: syndicate medic
+  components:
+  - type: Loadout
+    prototypes: [SyndicateReinforcementMedic]
+    roleLoadout: [ RoleSurvivalSyndicate ]
+
+- type: entity
+  parent: MobImperSyndicateAgent
+  id: MobImperSyndicateAgentSpy
+  name: syndicate spy
+  components:
+  - type: Loadout
+    prototypes: [SyndicateReinforcementSpy]
+    roleLoadout: [ RoleSurvivalSyndicate ]
+
+- type: entity
+  parent: MobImperSyndicateAgent
+  id: MobImperSyndicateAgentThief
+  name: syndicate thief
+  components:
+  - type: Loadout
+    prototypes: [SyndicateReinforcementThief]
+    roleLoadout: [ RoleSurvivalSyndicate ]
+
+- type: entity
+  parent: MobImperSyndicateAgentBase
+  id: MobImperSyndicateAgentNukeops # Reinforcement exclusive to nukeops uplink
+  suffix: Human, NukeOps
+  components:
+  - type: NukeOperative
+  - type: RandomMetadata
+    nameSegments:
+    - nukeops-role-operator
+    - NamesSyndicateNormal
+  - type: Loadout
+    prototypes: [SyndicateOperativeGearFullNoUplink]
+
+# Nuclear Operative
+- type: entity
+  categories: [ HideSpawnMenu ]
+  name: Nuclear Operative
+  parent: MobImper
+  id: MobImperNukeOp
+  components:
+  - type: NukeOperative
+  - type: RandomHumanoidAppearance
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: MobImper
+  id: MobImperLoneNuclearOperative
+  name: Lone Operative
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: NukeOperative
+  - type: Loadout
+    prototypes: [SyndicateLoneOperativeGearFull]
+    roleLoadout: [ RoleSurvivalSyndicate ]
+  - type: RandomMetadata
+    nameSegments:
+    - NamesSyndicatePrefix
+    - NamesSyndicateNormal
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+
+# Wizard
+- type: entity
+  categories: [ HideSpawnMenu ]
+  name: Wizard
+  parent: MobImper
+  id: MobImperWizard
+  components:
+  - type: RandomHumanoidAppearance
+  - type: NpcFactionMember
+    factions:
+    - Wizard

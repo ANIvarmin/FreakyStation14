@@ -1,0 +1,136 @@
+- type: species
+  id: Homa
+  name: Родентия
+  roundStart: true
+  prototype: MobHoma
+  sprites: MobHomaSprites
+  defaultSkinTone: "#ffa07a"
+  markingLimits: MobHomaMarkingLimits
+  dollPrototype: MobHomaDummy
+  skinColoration: Hues
+
+- type: speciesBaseSprites
+  id: MobHomaSprites
+  sprites:
+    Head: MobHomaHead
+    Hair: MobHumanoidAnyMarking
+    FacialHair: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking
+    Chest: MobHomaTorso
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
+    LArm: MobHomaLArm
+    RArm: MobHomaRArm
+    LHand: MobHomaLHand
+    RHand: MobHomaRHand
+    LLeg: MobHomaLLeg
+    RLeg: MobHomaRLeg
+    LFoot: MobHomaLFoot
+    RFoot: MobHomaRFoot
+
+- type: markingPoints
+  id: MobHomaMarkingLimits
+  points:
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 0
+      required: false
+    Tail:
+      points: 1
+      required: true
+    Snout:
+      points: 1
+      required: true
+    HeadTop:
+      points: 1
+      required: true
+    HeadSide:
+      points: 1
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobHomaHead
+  baseSprite:
+    sprite: Casha/Homyakk/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobHomaHeadMale
+  baseSprite:
+    sprite: Casha/Homyakk/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobHomaHeadFemale
+  baseSprite:
+    sprite: Casha/Homyakk/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobHomaTorso
+  baseSprite:
+    sprite: Casha/Homyakk/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobHomaTorsoMale
+  baseSprite:
+    sprite: Casha/Homyakk/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobHomaTorsoFemale
+  baseSprite:
+    sprite: Casha/Homyakk/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobHomaLLeg
+  baseSprite:
+    sprite: Casha/Homyakk/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobHomaLHand
+  baseSprite:
+    sprite: Casha/Homyakk/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobHomaLArm
+  baseSprite:
+    sprite: Casha/Homyakk/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobHomaLFoot
+  baseSprite:
+    sprite: Casha/Homyakk/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobHomaRLeg
+  baseSprite:
+    sprite: Casha/Homyakk/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobHomaRHand
+  baseSprite:
+    sprite: Casha/Homyakk/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobHomaRArm
+  baseSprite:
+    sprite: Casha/Homyakk/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobHomaRFoot
+  baseSprite:
+    sprite: Casha/Homyakk/parts.rsi
+    state: r_foot

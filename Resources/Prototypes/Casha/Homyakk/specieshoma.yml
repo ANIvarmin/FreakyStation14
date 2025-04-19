@@ -1,0 +1,73 @@
+- type: entity
+  save: false
+  name: Urist McRodentia
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobHoma
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Homa
+  - type: Hunger # on 1.5x more
+    thresholds:
+      Overfed: 250
+      Okay: 200
+      Peckish: 150
+      Starving: 100
+      Dead: 0
+    baseDecayRate: 0.02
+  - type: Thirst # on 1.5x more
+    thresholds:
+      OverHydrated: 650
+      Okay: 500
+      Thirsty: 350
+      Parched: 200
+      Dead: 0
+    baseDecayRate: 0.15
+  - type: Icon
+    sprite: Casha/Homyakk/parts.rsi
+    state: full
+  - type: Body
+    prototype: Homa
+    requiredLegs: 2
+  - type: Inventory
+    speciesId: reptilian # whyyy
+  - type: ContentEye
+    targetZoom: "1.125, 1.125"
+    maxZoom: "1.125, 1.125"
+  - type: Speech
+    allowedEmotes: ['Howl', 'Growl']
+  - type: Vocal
+    sounds:
+      Male: MaleVulpkanin
+      Female: FemaleVulpkanin
+      Unsexed: MaleVulpkanin
+  - type: GrowlingAccent
+  - type: MeleeWeapon
+    animation: WeaponArcClaw
+    soundHit:
+      collection: AlienClaw
+    damage:
+      types:
+        Slash: 5
+  - type: LightweightDrunk
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Vulpkanin
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 2.0
+    damageRecovery:
+      types:
+        Asphyxiation: -2.0
+
+- type: entity
+  save: false
+  name: Urist McHoma
+  parent: MobHumanDummy
+  id: MobHomaDummy
+  noSpawn: true
+  description: A dummy Homo meant to be used in character setup.
+  components:
+  - type: HumanoidAppearance
+    species: Homa
